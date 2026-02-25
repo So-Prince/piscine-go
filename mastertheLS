@@ -1,0 +1,4 @@
+#!/bin/bash
+ls -ptu --time=atime | grep -v '^\.' | tr '\n' ',' | sed 's/,$/\n/'
+
+
